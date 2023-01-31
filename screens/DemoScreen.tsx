@@ -14,6 +14,17 @@ const DemoScreen = () => {
               <Ionicons name="arrow-back" size={50} color="white" />
               <Text className="text-white">Go Back</Text>
         </TouchableOpacity>
+        <View className="flex-1 items-center justify-center px-10">
+            <Text className="text-white text-2xl font-extrabold">Hooray!</Text>
+            <Text className="text-white text-2xl text-center font-extrabold mb-20">You have access to this feature</Text>
+            <Ionicons name="build-outline" size={200} color="white" />
+            <View className="-mt-16 -ml-8">
+                <Ionicons name="checkmark-circle-sharp" size={60} color="#96F550" />
+            </View>
+            <Text className="text-white mt-10 flex-1 font-bold text-center">
+                Change the navigation page to navigation.navigate('pageIWant')
+            </Text>
+        </View>
     </SafeAreaView>
   )
 }
