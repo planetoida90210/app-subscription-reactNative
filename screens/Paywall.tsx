@@ -69,8 +69,10 @@ const PaywallScreen = () => {
       </View>
 
       {/* monthly subscribe */}
+      <View></View>
+      {/* annual subscribe */}
 
-      {/* yearly subscribe */}
+      {/* restore purchases */}
     </ScrollView>
   )
 }
