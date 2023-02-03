@@ -30,7 +30,7 @@ const PaywallScreen = () => {
           color="#E5962D" 
         />
       </View>
-      <View className="space-y-3 px-3 pt-5 pb-2">
+      <View className="space-y-3 mx-1 px-3 pt-5 pb-2">
         <View className="flex-row space-x-10 items-center">
           <Ionicons name="md-key" size={32} color="#E5962D" />
           <View className="flex-1">
@@ -69,7 +69,7 @@ const PaywallScreen = () => {
       </View>
 
       {/* monthly subscribe */}
-      <View></View>
+      
       {/* annual subscribe */}
 
       {/* restore purchases */}
