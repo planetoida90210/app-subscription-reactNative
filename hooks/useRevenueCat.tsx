@@ -41,9 +41,16 @@ function useRevenueCat() {
        }, []) 
 
         useEffect(() => {
-            
+            const customerInfoUpdated = async (purchaserInfo: CustomerInfo) => {
+                setCustomerInfo(purchaserInfo);
 
-        }, [])
+            }
+
+            Purchases.addCustomerInfoUpdateListener(customerInfoUpdated);
+
+        }, []);
+
+        return { currentOffering, customerInfo, isProMember }
 }
 
 export default useRevenueCat
