@@ -6,11 +6,16 @@ import { useNavigation } from '@react-navigation/native';
 //external imports
 import ActionRow from '../components/ActionRow';
 import { RootStackParamList } from '../App';
+import useRevenueCat from '../hooks/useRevenueCat';
 
 export type NavigationProp = NativeStackNavigationProp<RootStackParamList, "Home">;
 
 const HomeScreen = () => {
   const navigation = useNavigation<NavigationProp>()
+  const { currentOffering, customerInfo, isProMember } = useRevenueCat();
+
+  console.log("debog", currentOffering)
+
   return (
     <SafeAreaView className="flex-1 bg-gray-200 relative">
       <ScrollView>
