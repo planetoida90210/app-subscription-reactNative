@@ -14,14 +14,13 @@ const HomeScreen = () => {
   const navigation = useNavigation<NavigationProp>()
   const { currentOffering, customerInfo, isProMember } = useRevenueCat();
 
-  console.log("debog", currentOffering)
 
   return (
     <SafeAreaView className="flex-1 bg-gray-200 relative">
       <ScrollView>
         <TouchableOpacity onPress={() => navigation.navigate("Paywall")} className="absolute z-50 top-4 right-8 items-center">
           <Ionicons name="person-circle" size={30} color="#E5962D" />
-          <Text className="text-center text-[#E5962D]">UPGRADE</Text>
+          <Text className="text-center text-[#E5962D]">{isProMember ? "PRO" : "UPRGADE"}</Text>
         </TouchableOpacity>
         <Image 
           source={{ uri: "https://i.imgur.com/e14NE49.png"}}
